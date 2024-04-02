@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/img/music.svg">
+    <title>Reproductor de musica</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="icon"
+    href="https://cdn.icon-icons.com/icons2/3421/PNG/512/music_ios_play_icon_218556.png">
+
+
+</head>
+
+<body>
+
+    <main class="box__columns">
+        <section class="box__options">
+            <div class="box__options__box1">
+                <ul class="box__options__box1__ul">
+                    <li>
+                        <img class="img__alings img__size style_hover" src="/assets/img/home.svg" alt="">
+                        <a class="style_hover" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <img class="img__alings img__size" src="/assets/img/explore.svg" alt="">
+                        <a class="style_hover" href="#">Explorar</a>
+                    </li>
+                    <li>
+                        <img class="img__alings img__size" src="/assets/img/favorite.svg" alt="">
+                        <a class="style_hover" href="#">Favoritos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box__options__box2">
+                <ul>
+                    <li class="box__options__box2__ul">
+                        <img class="img__alings img__size" src="/assets/img/playlist.svg" alt="">
+                        <a class="style_hover" href="#">Lista de reproduccion</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="box__options1">
+            <div class="box__options__box3">
+                <div class="arrows__nav">
+                    <img class="img__size" src="/assets/img/left_arrow.svg" alt="">
+                    <img class="img__size" src="/assets/img/right_arrow.svg" alt="">
+                </div>
+                <input class="search__bar" type="text" placeholder="Buscar">
+                <div class="icons__nav">
+                    <img class="img__size" src="/assets/img/bell.svg" alt="">
+                    <img class="img__size" src="/assets/img/People.svg" alt="">
+                </div>
+            </div>
+
+            <div class="box__options__box4">
+                <div class="container__list">
+                    <div class="flex" id="track-list">
+                        <div class="containe__box__listm">
+                            <div class="title__artist">
+                                <p>Nombre</p>
+                            </div>
+                            <p>Album</p>
+                            <p>Duracion</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__controls">
+        <div class="album">
+            <img id="current_song_img" class="albumCaratule" src="#" alt="">
+            <div class="album__info">
+                <p id="current_title"></p>
+                <p id="current_author"></p>
+            </div>
+            <img class="img__size" src="/assets/img/add.svg" alt="">
+        </div>
+
+        <div class="controls album">
+            <audio id="control_audio" controls autoplay src="#"></audio>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
